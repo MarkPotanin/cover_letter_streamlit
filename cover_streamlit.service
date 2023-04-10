@@ -1,0 +1,12 @@
+[Unit]
+Description=Streamlit Cover Letter Service
+After=network.target
+
+[Service]
+User=root
+WorkingDirectory=/root/streamlit_gpt
+ExecStart=streamlit run /root/streamlit_gpt/main.py
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
