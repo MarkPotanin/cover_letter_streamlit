@@ -16,11 +16,11 @@ This repository contains a simple streamlit application.
 * reate a new key by clicking the `Create new secret key` button.
 * Then use this API key inside `main.py` in the variable `openai.api_key` on line 16.
 
-### 2. Cloud Server
+### 2. Cloud Server.
 
 After obtaining OpenAI API key, you can run your application **locally** with `streamlit run main.py`. For production purposes, it's better to place the bot on a cloud server. I used `http://linode.com` (which offers a $100 trial period).
 
-### 3. Service
+### 3. Service.
 
 Run your application in the background on your cloud server. You can use my service file `cover_streamlit.service`.
 
@@ -30,6 +30,6 @@ Run your application in the background on your cloud server. You can use my serv
 
 If you encounter any problems, read any tutorial about services (like [this](https://medium.com/codex/setup-a-python-script-as-a-service-through-systemctl-systemd-f0cc55a42267)). 
 
-### 4. Domain
+### 4. Domain.
 
 I bought a domain for my streamlit application at `https://www.godaddy.com/`. It costs about 1$. I also place simple nginx config at `coverletter-writer.com` (should be place in `/etc/nginx/sites-available/coverletter-writer.com`).
